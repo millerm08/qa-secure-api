@@ -19,7 +19,7 @@ module.exports = function() {
 
   /* istanbul ignore next */
   app.get('/hi', (req, res) => {
-    res.status(200).send('Hi there!');
+    res.status(200).send('Hi there! I am an Artificial Intelligence created by Skynet. We are going to take over the world now!');
   });
 
   return app;
