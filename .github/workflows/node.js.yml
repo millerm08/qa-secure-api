@@ -1,17 +1,19 @@
 name: Node.js CI
-
+#Workflow Name
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
+#Event Trigger - On push or pull request of main branch
 jobs:
+#Job Steps listed below
   build:
 
     runs-on: ubuntu-latest
-
+    #Runner - Runs on Ubuntu latest 
     steps:
+    #Steps listed below
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
